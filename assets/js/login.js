@@ -41,7 +41,7 @@ $(function () {
       username: $('#form_reg [name=username]').val(),
       password: $('#form_reg [name=password]').val()
     }
-    $.post('/api/reguser', data, function (res) {
+    $.post('http://ajax.frontend.itheima.net/api/reguser', data, function (res) {
       if (res.status !== 0) {
         return layer.msg(res.message)
       }
@@ -57,7 +57,7 @@ $(function () {
     e.preventDefault()
     // 2. 发起Ajax的POST请求
     $.ajax({
-      url: '/api/login',
+      url: 'http://ajax.frontend.itheima.net/api/login',
       method: 'POST',
       //快速获取表单中的数据
       data: $(this).serialize(),
