@@ -22,7 +22,8 @@ iframe {
 }
 
 a {
-  transition: none !important;
+  /* 强制清除a链接动画效果 */
+  transition: none !important;  
 }
 
 .userinfo {
@@ -33,7 +34,7 @@ a {
   user-select: none;
 }
 
-.layui-side-scroll .userinfo {
+ .layui-side-scroll .userinfo {
   border-bottom: 1px solid #282b33;
 }
 
@@ -55,4 +56,4 @@ a {
   position: relative;
   top: 4px;
   margin-right: 10px;
-}
+} 
